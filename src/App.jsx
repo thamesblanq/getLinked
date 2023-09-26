@@ -1,12 +1,12 @@
 import Header from "./components/Header"
-import Main from "./components/Main"
+import  Content from "./components/Content"
 
 function App() {
 
   return (
     <div className="bg-[#150E28] overflow-hidden">
        <Header />
-       <Main />
+       <Content />
     </div>
   )
 }

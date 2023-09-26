@@ -6,3 +6,8 @@
     font-family: 'Clash';
     src: url('../public/font/ClashDisplay-Bold.ttf');
 }
+
+.active {
+    height: auto;
+    transition: all 0.5s cubic-bezier(1,0,1,0);
+}
