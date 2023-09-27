@@ -16,6 +16,9 @@ import whiteStar from '../images/star-white.png';
 import attr from '../images/attr.png';
 import ellipse from '../images/ellipse.png';
 import faq from '../images/faq.png';
+import qOne from '../images/q-one.png';
+import qTwo from '../images/q-two.png';
+import qThree from '../images/q-three.png';
 
 import Accordion from './Accordion';
 
@@ -215,8 +218,11 @@ const Main = () => {
 
                 <Accordion data={data}/>
             </div>
-                <div>
+                <div className='relative'>
                     <img src={faq}></img>
+                    <img src={qOne} className='absolute -top-12 right-24'></img>
+                    <img src={qTwo} className='absolute -top-16 right-64'></img>
+                    <img src={qThree} className='absolute top-0'></img>
                 </div>
             </div>
 
