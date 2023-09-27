@@ -50,9 +50,15 @@ const data =
 
 
 const Accordion = () => {
-    const [showInfo, setShowInfo] = useState(false);
-    const showOne = index => {
-        let item = data.find(el => el.id === index); 
+    const [activeIndex, setActiveIndex] = useState(null);
+
+    const toggle = index => {
+        if (activeIndex === index) {
+            setActiveIndex(null)
+        }else {
+            setActiveIndex(index)
+            console.log(activeIndex)
+        }
     }
 
   return (
@@ -62,13 +68,15 @@ const Accordion = () => {
             <li key={index} className="mb-2 p-4 border-b border-b-white w-[400px] md:w-[500px]">
                 <div className="font-bold text-white font-montserrat text-sm flex justify-between items-center">
                     <h1>{item.question}</h1>
-                    <button onClick={() => setShowInfo(!showInfo)}>
-                        {showInfo ? <FaMinus /> : <FaPlus />}
+                    <button onClick={() => toggle(index)}>
+                        {activeIndex === index ? <FaMinus /> : <FaPlus />}
                     </button>
                 </div>
-                <div className="text-white font-montserrat text-xs max-h-0 overflow-hidden duration-500 transition-all">
-                    {showInfo && <p>{item.answer}</p>}
-                </div>
+                {activeIndex === index && (
+                        <div className="text-white font-montserrat text-xs max-h-auto overflow-hidden duration-500 transition-all">
+                            <p>{item.answer}</p>
+                        </div>
+                )}
             </li>    
             )}
         </ul>
