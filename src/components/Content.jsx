@@ -19,49 +19,17 @@ import faq from '../images/faq.png';
 import qOne from '../images/q-one.png';
 import qTwo from '../images/q-two.png';
 import qThree from '../images/q-three.png';
+import date from '../images/date.png';
+import number from '../images/numbers.png';
+import timeline from '../images/timeline.png';
+import cup from '../images/cup.png';
+import reward from '../images/rewards.png';
+import partner from '../images/partner.png';
+
 
 import Accordion from './Accordion';
 
 
-const data =
-[
-    {
-        open: false,
-        question: "Can I work on a project I started before the Hackathon?",
-        answer: 
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
-    },
-    {
-        open: false,
-        question: "What happens if I need help during the hackathon?",
-        answer: 
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
-    },
-    {
-        open: false,
-        question: "What happens if I don't have an idea for a project?",
-        answer: 
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
-    },
-    {
-        open: false,
-        question: "Can I join a team or do I have to come with one?",
-        answer: 
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
-    },
-    {
-        open: false,
-        question: "What happens after the hackathon ends?",
-        answer: 
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
-    },
-    {
-        open: false,
-        question: "Can I work on a project I started before the hackathon?",
-        answer: 
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
-    }
-]
 
 
 
@@ -206,7 +174,7 @@ const Main = () => {
         </section>
 
         <section className='flex flex-col border-b border-b-gray-500'>
-            <div className='flex flex-col md:flex-row items-center justify-around py-4 pt-8'>
+            <div className='flex flex-col md:flex-row items-center justify-around py-4 pt-8 gap-y-20 md:gap-y-0'>
 
             <div className="flex flex-col justify-center md:items-start md:ml-32 items-center w-full gap-y-4">
 
@@ -216,17 +184,78 @@ const Main = () => {
             
                 <p className='text-white font-montserrat text-sm my-2 w-[400px] md:w-[500px]'>We got answers to the questions that you might want to ask about getlinked Hackathon 1.0</p>
 
-                <Accordion data={data}/>
+                <Accordion />
             </div>
                 <div className='relative'>
                     <img src={faq}></img>
                     <img src={qOne} className='absolute -top-12 right-24'></img>
                     <img src={qTwo} className='absolute -top-16 right-64'></img>
-                    <img src={qThree} className='absolute top-0'></img>
+                    <img src={qThree} className='absolute top-0 left-10 md:left-0'></img>
                 </div>
             </div>
 
         </section>
+
+        <section className='flex flex-col border-b border-b-gray-500'>
+            <div className='flex flex-col gap-4 items-center justify-center py-10'>
+
+                <div className='relative'>
+                    <img src={timeline} className='hidden md:block relative'></img>
+                    <p className='text-white font-montserrat text-xl my-2 hidden md:block absolute top-16 right-56'>Here is the breakdown of the time we anticipate using for the upcoming event.</p>
+                </div>
+
+                <div className='flex flex-col items-center md:hidden'>
+                    <h1 className='font-clash text-white text-2xl'>Timeline</h1>
+                    <p className='text-white font-montserrat text-sm my-2 w-1/2'>Here is the breakdown of the time we anticipate using for the upcoming event.</p>
+                </div>
+
+                <div className='flex md:hidden'>
+                    <div><img src={number}></img></div>
+                    <div><img src={date}></img></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section className='flex flex-col'>
+
+            <div className='flex flex-col gap-y-4 items-center justify-center py-10 px-4 relative'>
+
+                <img src={purpleLens} className='absolute opacity-50 top-0 -right-32'></img>
+                <img src={purpleLens} className='absolute opacity-50 bottom-0 md:-left-[25rem] -left-32'></img>
+                <img src={whiteStar} className='absolute top-10 right-16 md:right-32'></img>
+                <img src={bigStar} className='absolute bottom-80 md:bottom-10 left-32 md:left-96'></img>
+
+                <div className='flex flex-col items-center justify-center'>
+                    <h1 className='font-clash text-white text-2xl'>Prizes and <span className='text-span'>Rewards</span></h1>
+                    <p className='text-white font-montserrat text-sm my-2 w-[70%] md:w-auto'>Highlight of the prizes or rewards for winners and for participants.</p>
+                </div>
+                
+                <div className='flex flex-col md:flex-row items-center justify-evenly gap-10'>
+                    <div><img src={cup}></img></div>
+                    <div><img src={reward} className='md:w-[80%]'></img></div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section className='flex flex-col'>
+            <div className='flex flex-col items-center justify-center gap-4 px-4 py-10'>
+
+                <div className='flex flex-col items-center justify-center'>
+                    <h1 className='font-clash text-white text-2xl'>Partners and Sponsors</h1>
+                    <p className='text-white font-montserrat text-sm my-2 w-[70%] md:w-auto'>Getlinked Hackathon 1.0 is honored to have the following major companies as its partners and sponsors</p>
+                </div>
+
+                <div className='flex flex-col items-center justify-center p-4'>
+                    <img src={partner} className='w-[90%] md:w-[80%] cursor-pointer'></img>
+                </div>
+
+            </div>
+        </section>
+
+        <section></section>
 
 
     </main>
