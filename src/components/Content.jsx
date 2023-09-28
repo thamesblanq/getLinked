@@ -25,9 +25,12 @@ import timeline from '../images/timeline.png';
 import cup from '../images/cup.png';
 import reward from '../images/rewards.png';
 import partner from '../images/partner.png';
+import padlock from '../images/padlock.png';
+import privacy from '../images/privacy.png';
 
 
 import Accordion from './Accordion';
+import { FaCheckCircle } from 'react-icons/fa';
 
 
 
@@ -255,7 +258,67 @@ const Main = () => {
             </div>
         </section>
 
-        <section></section>
+        <section>
+
+            <div className='flex flex-col md:flex-row items-center justify-around px-8 gap-y-4 relative'>
+
+                <div className='flex flex-col items-center justify-center gap-4 md:w-1/2'>
+
+                    <div className='flex flex-col gap-y-8'>
+                            <h1 className='font-clash text-white text-2xl'>Privacy Policy and <span className='text-span'>Terms</span></h1>
+                            <p className='text-gray-500 font-montserrat text-sm my-2 w-[70%] md:w-auto'>Last updated on September 12, 2023</p>
+                            <p className='text-white font-montserrat text-sm my-2 w-[70%] md:w-auto'>Below are our privacy & policy, which outline a lot of goodies. it’s our aim to always take of our participant.
+                            </p> 
+                    </div>
+
+                    <div className='flex flex-col items-center justify-center gap-y-4 border border-gray-400 rounded-xl px-8 py-4 bg-black/30'>
+                        <p className='font-montserrat text-sm text-white'>At getlinked tech Hackathon 1.0, we value your privacy
+                            and are committed to protecting your personal information.
+                            This Privacy Policy outlines how we collect, use, disclose, 
+                            and safeguard your data when you participate in our tech 
+                            hackathon event. By participating in our event, you consent 
+                            to the practices described in this policy.
+                        </p>
+
+                        <h4 className='font-montserrat text-sm text-span font-bold'>Licensing Policy</h4>
+
+                        <p className='font-montserrat text-sm text-white font-bold'>
+                            Here are terms of our Standard License:
+                        </p>
+
+                        <div className='flex items-start justify-start gap-4'>
+                            <FaCheckCircle className='text-green-400 text-xl md:text-sm'/>
+                            <p className='font-montserrat text-sm text-white'>The Standard License grants you a non-exclusive right to navigate and register for our event
+                            </p> 
+                        </div>
+
+                        <div className='flex items-start justify-start gap-4'>
+                            <FaCheckCircle className='text-green-400 text-xl md:text-sm'/>
+                            <p className='font-montserrat text-sm text-white'>You are licensed to use the item available at any free source
+                            sites, for your project developement
+                            </p> 
+                        </div>
+
+                        <button className='py-4 px-10 text-white font-montserrat text-sm cursor-pointer bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-sm font-semibold'>Read More</button>
+
+
+                    </div>
+
+                </div>
+
+
+                <div className='relative grid'>
+                    <img src={privacy} className='z-40'></img>
+                    <img src={padlock} className='absolute z-10 top-0'></img>
+                </div>
+
+                <img src={bigStar} className='absolute top-10 md:top-0 left-16 md:left-32'></img>
+                <img src={whiteStar} className='bottom-0 right-0'></img>
+                <img src={smallStar} className='absolute bottom-32 right-8 md:right-[35rem]'></img>
+
+            </div>
+
+        </section>
 
 
     </main>
