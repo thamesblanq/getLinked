@@ -1,15 +1,30 @@
-import Header from "./components/Header"
+import Layout from "./components/Layout"
 import  Content from "./components/Content"
-import Footer from "./components/Footer"
+import Missing from "./components/Missing"
+import Contact from "./components/Contact"
+
+import { Routes, Route } from "react-router-dom"
+
 
 function App() {
 
   return (
-    <div className="bg-[#150E28] overflow-hidden">
-       <Header />
-       <Content />
-       <Footer/>
-    </div>
+    
+     <Routes>
+
+      <Route path="/" element={<Layout />}>
+
+        <Route index element={<Content />} />
+
+        <Route path="/contact" element={<Contact />} />
+
+        <Route path="*" element={<Missing />}/>
+
+      </Route>
+
+     </Routes>
+      
+    
   )
 }
 
