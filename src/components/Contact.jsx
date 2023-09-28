@@ -40,7 +40,7 @@ const Contact = () => {
             const result = response.text();
             console.log(result);
         } catch(err){
-            console.log(err.message)
+            console.log(err)
         }
 
     
@@ -70,7 +70,7 @@ const Contact = () => {
                     <p className="text-sm font-montserrat text-white">Contact Information</p>
                     <p className="text-sm font-montserrat text-white">27,Alara Street Yaba 100012 Lagos State</p>
                     <p className="text-sm font-montserrat text-white">Call Us : 07046079184</p>
-                    <p className="text-sm font-montserrat text-white">we are open from Monday-Friday 08:00am - 05:00pm</p>
+                    <p className="text-sm font-montserrat text-white">We are open from Monday-Friday 08:00am - 05:00pm</p>
                     <div className="flex flex-col gap-y-4">
                         <h1 className="text-span font-semibold">Share on</h1>
                         <div className="flex items-start gap-2">
