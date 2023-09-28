@@ -72,11 +72,13 @@ const Accordion = () => {
                         {activeIndex === index ? <FaMinus /> : <FaPlus />}
                     </button>
                 </div>
-                {activeIndex === index && (
-                        <div className="text-white font-montserrat text-xs max-h-auto overflow-hidden duration-500 transition-all">
-                            <p>{item.answer}</p>
-                        </div>
-                )}
+                <div
+                    className={`transition-all ease-in-out duration-500 text-white font-montserrat text-xs max-h-0 overflow-hidden ${
+                    activeIndex === index ? 'max-h-screen p-4' : 'max-h-0 p-0'
+                    }`}
+                >
+                    <p>{item.answer}</p>
+                </div>
             </li>    
             )}
         </ul>

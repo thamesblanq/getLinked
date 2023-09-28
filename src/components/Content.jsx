@@ -315,6 +315,7 @@ const Main = () => {
                 <img src={bigStar} className='absolute top-10 md:top-0 left-16 md:left-32'></img>
                 <img src={whiteStar} className='bottom-0 right-0'></img>
                 <img src={smallStar} className='absolute bottom-32 right-8 md:right-[35rem]'></img>
+                <img src={purpleLens} className='absolute bottom-64 md:-bottom-64 -left-32 opacity-50'></img>
 
             </div>
 
