@@ -73,7 +73,7 @@ const Accordion = () => {
                     </button>
                 </div>
                 <div
-                    className={`transition-all ease-in-out duration-500 text-white font-montserrat text-[0.5rem] max-h-0 overflow-hidden md:text-xs ${
+                    className={`transition-all ease-in-out duration-500 text-white font-montserrat text-xs md:text-sm max-h-0 overflow-hidden ${
                     activeIndex === index ? 'max-h-screen p-4' : 'max-h-0 p-0'
                     }`}
                 >

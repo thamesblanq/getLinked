@@ -39,7 +39,7 @@ import { FaCheckCircle } from 'react-icons/fa';
 const Main = () => {
   return (
     <main className='-z-50'>
-        <section className='flex flex-col md:flex-row justify-around items-center border-b border-b-gray-500 px-8 pt-16 pl-4'>
+        <section className='flex flex-col md:flex-row justify-around items-center border-b border-b-gray-500 px-8 pt-16 pl-4 overflow-hidden'>
             <div className='h-[50vh] w-[80%] md:w-auto md:h-auto flex flex-col justify-center items-center md:items-start md:justify-start relative mb-20 md:mb-0'>
                 <img src={purpleLens} className='absolute -top-24 -left-60 md:-top-60 md:-left-32 blur-xl w-[70%]'></img>
                 <img src={star} className='block absolute bottom-8 left-44 md:hidden'></img>
@@ -209,7 +209,7 @@ const Main = () => {
                     <p className='text-white font-montserrat md:text-base lg:text-xl my-2 hidden md:block absolute top-16 right-56 w-[50%]'>Here is the breakdown of the time we anticipate using for the upcoming event.</p>
                 </div>
 
-                <div className='flex flex-col items-start md:hidden px-4'>
+                <div className='flex flex-col items-start md:hidden px-12 md:px-4'>
                     <h1 className='font-clash text-white text-2xl'>Timeline</h1>
                     <p className='text-white font-montserrat text-sm my-2'>Here is the breakdown of the time we anticipate using for the upcoming event.</p>
                 </div>

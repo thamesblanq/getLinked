@@ -63,7 +63,7 @@ const Contact = () => {
   return (
     <section>
 
-            <div className="flex flex-col md:flex-row justify-around items-center py-8 px-4 gap-y-8">
+            <div className="flex flex-col md:flex-row justify-around items-center py-8 px-4 gap-y-8 overflow-hidden">
 
                 <div className="flex flex-col gap-y-4">
                     <h1 className="text-xl font-clash text-span">Get in touch</h1>

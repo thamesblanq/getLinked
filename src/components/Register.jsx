@@ -75,7 +75,7 @@ const Register = () => {
     {showModal && <Modal isOpen={showModal} onClose={() => setShowModal(false)} />}
 
     <section>
-      <div className='flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0 px-8 py-8'>
+      <div className='flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0 px-8 py-8 overflow-hidden'>
         <div className='relative'>
           <img src={register} alt='Register' />
           <img src={purplelens} alt='Purple Lens Flare' className='absolute -top-32 -left-32 opacity-50' />

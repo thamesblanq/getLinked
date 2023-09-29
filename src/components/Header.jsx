@@ -9,7 +9,7 @@ const Header = () => {
   const[show, setShow] = useState(false)
 
   return (
-    <header className='flex justify-between items-center px-8  py-4 border-b border-b-gray-500'>
+    <header className='flex justify-between items-center px-8  py-4 border-b border-b-gray-500 z-50'>
         <Logo />
 
         <FaBars className='text-white block text-2xl md:hidden cursor-pointer' onClick={() => setShow(prev => !prev)}/>

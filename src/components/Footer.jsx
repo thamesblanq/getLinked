@@ -1,5 +1,6 @@
 import { FaEnvelope, FaFacebookF, FaInstagram, FaLinkedinIn, FaPhone, FaTwitter } from 'react-icons/fa';
 import Logo from './Logo';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -25,7 +26,9 @@ const Footer = () => {
                     <p className='font-montserrat text-white text-sm cursor-pointer hover:italic ease-in-out duration-500'>Overview</p>
                     <p className='font-montserrat text-white text-sm cursor-pointer hover:italic ease-in-out duration-500'>Timeline</p>
                     <p className='font-montserrat text-white text-sm cursor-pointer hover:italic ease-in-out duration-500'>FAQs</p>
-                    <p className='font-montserrat text-white text-sm cursor-pointer hover:italic ease-in-out duration-500'>Register</p>
+                    <Link to='/register'>
+                        <p className='font-montserrat text-white text-sm cursor-pointer hover:italic ease-in-out duration-500'>Register</p>
+                    </Link>
                     <div className='flex items-start gap-4'>
                         <h1 className='text-span text-sm font-semibold'>Follow Us</h1>
                         <FaInstagram  className='text-white hover:scale-125 transition-all ease-in-out duration-500 cursor-pointer'/>
@@ -40,7 +43,9 @@ const Footer = () => {
             <div className='flex flex-col gap-4 items-start md:items-center'>
 
                 <div className='flex flex-col gap-4'>
-                    <h1 className='text-span text-base font-semibold'>Contact Us</h1>
+                    <Link to='/contact'>
+                        <h1 className='text-span text-base font-semibold cursor-pointer'>Contact Us</h1>
+                    </Link>
                     <div className='flex'>
                         <FaPhone className='text-white gap-2' />
                         <a href='tel:+2347046079184' className='font-montserrat text-white text-sm'>+234 7046 079 184</a>
