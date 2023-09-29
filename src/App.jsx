@@ -14,15 +14,10 @@ function App() {
      <Routes>
 
       <Route path="/" element={<Layout />}>
-
         <Route index element={<Content />} />
-
-        <Route path="/contact" element={<Contact />} />
-
-        <Route path="/register" element={<Register />} />
-
-        <Route path="*" element={<Missing />}/>
-
+        <Route path="contact" element={<Contact />} />
+        <Route path="register" element={<Register />} />
+        <Route path="*" element={<Missing />} />
       </Route>
 
      </Routes>
