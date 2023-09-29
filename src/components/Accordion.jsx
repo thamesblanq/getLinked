@@ -65,15 +65,15 @@ const Accordion = () => {
     <div>
         <ul className="flex flex-col gap-2 items-center justify-center">
             {data.map((item, index) => 
-            <li key={index} className="mb-2 p-4 border-b border-b-white w-[400px] md:w-[500px]">
-                <div className="font-bold text-white font-montserrat text-sm flex justify-between items-center">
+            <li key={index} className="mb-2 p-4 border-b border-b-white w-[270px] md:w-[350px] lg:w-[500px]">
+                <div className="font-bold text-white font-montserrat text-xs md:text-sm flex justify-between items-center">
                     <h1>{item.question}</h1>
                     <button onClick={() => toggle(index)}>
                         {activeIndex === index ? <FaMinus /> : <FaPlus />}
                     </button>
                 </div>
                 <div
-                    className={`transition-all ease-in-out duration-500 text-white font-montserrat text-xs max-h-0 overflow-hidden ${
+                    className={`transition-all ease-in-out duration-500 text-white font-montserrat text-[0.5rem] max-h-0 overflow-hidden md:text-xs ${
                     activeIndex === index ? 'max-h-screen p-4' : 'max-h-0 p-0'
                     }`}
                 >

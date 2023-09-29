@@ -39,22 +39,22 @@ import { FaCheckCircle } from 'react-icons/fa';
 const Main = () => {
   return (
     <main className='-z-50'>
-        <section className='flex flex-col md:flex-row justify-around items-center border-b border-b-gray-500 px-4 pl-4'>
-            <div className='h-[80vh] w-[80%] md:w-auto md:h-auto flex flex-col justify-center items-center md:items-start md:justify-start relative'>
+        <section className='flex flex-col md:flex-row justify-around items-center border-b border-b-gray-500 px-8 pt-16 pl-4'>
+            <div className='h-[50vh] w-[80%] md:w-auto md:h-auto flex flex-col justify-center items-center md:items-start md:justify-start relative mb-20 md:mb-0'>
                 <img src={purpleLens} className='absolute -top-24 -left-60 md:-top-60 md:-left-32 blur-xl w-[70%]'></img>
                 <img src={star} className='block absolute bottom-8 left-44 md:hidden'></img>
                 <img src={star} className='block absolute top-8 left-32 md:hidden'></img>
                 <div className='mb-4 relative'>
-                        <h1 className='font-bold font-clash text-4xl md:text-6xl text-white leading-9 mb-4'>getlinked Tech Hackathon <span className='text-span'>1.0</span></h1>
-                        <p className='text-white leading-5 font-montserrat md:w-1/2 mb-4'>Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize</p>
-                        <img src={creative} className='absolute -top-16 right-0 md:-top-4 md:right-44'></img>
-                        <img src={chain} className='absolute -top-0 -right-4 md:top-16 md:right-48 rotate-180'></img>
-                        <img src={fire} className='absolute top-4 -right-8 md:top-16 md:right-32'></img>
+                        <h1 className='font-bold font-clash text-4xl md:text-4xl lg:text-6xl text-white leading-9 mb-4'>getlinked Tech Hackathon <span className='text-span'>1.0</span></h1>
+                        <p className='text-white leading-5 font-montserrat md:w-[70%] lg:w-1/2 mb-4'>Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize</p>
+                        <img src={creative} className='absolute -top-2 right-0 md:-top-2 md:right-10 lg:-top-4 lg:right-44 w-[10%] lg:w-auto'></img>
+                        <img src={chain} className='absolute top-8 -right-2 md:top-10 md:right-12 lg:top-16 lg:right-48 rotate-180 w-[10%] lg:w-auto'></img>
+                        <img src={fire} className='absolute top-8 -right-8 md:top-10 md:right-4 lg:top-16 lg:right-32 w-[10%] lg:w-auto'></img>
                 </div>
 
                 <Button />
 
-                <div className='text-sm text-white font-unica mt-16'><span className='text-6xl md:text-4xl'>00</span>H <span className='text-6xl md:text-4xl'>00</span>M <span className='text-6xl md:text-4xl'>00</span>S</div>
+                <div className='text-sm text-white font-unica mt-16'><span className='text-4xl md:text-4xl'>00</span>H <span className='text-4xl md:text-4xl'>00</span>M <span className='text-4xl md:text-4xl'>00</span>S</div>
             </div>
 
             <div className='relative'>
@@ -69,30 +69,32 @@ const Main = () => {
         </section>
 
         <section className='flex flex-col items-center justify-center border-b border-b-gray-500'>
+           
 
-            <div className='flex flex-col md:flex-row items-center md:h-[80vh] px-4 mt-8 md:gap-8 py-6 relative'>
-                <img src={smallStar} className='absolute bottom-32 right-8 md:top-16 md:left-16'></img>
-                <img src={bigStar} className='absolute right-96 top-32 md:top-32 md:right-16'></img>
-                <img src={arrow}  className='absolute bottom-72 md:bottom-4 md:right-[40rem]'></img>
+                <div className='flex flex-col md:flex-row items-center md:h-[40vh] lg:h-[70vh] px-4 mt-8 md:mt-2 md:gap-8 py-6 md:py-4 relative'>
+                    <img src={smallStar} className='absolute bottom-32 right-8 md:top-16 md:left-16'></img>
+                    <img src={bigStar} className='absolute right-96 top-32 md:top-32 md:right-16'></img>
+                    <img src={arrow}  className='absolute bottom-80 md:bottom-4 md:right-[40rem]'></img>
 
-                <div className='md:w-1/2 md:pl-8'>
-                    <img src={bigIdea} className=''></img>
+                    <div className='md:w-1/2 md:pl-8'>
+                        <img src={bigIdea} className=''></img>
+
+                    </div>
+
+                    <div className='w-[80%] md:w-1/2'>
+                        <h1 className='font-clash text-white text-2xl w-[70%] md:w-[50%]'>Introduction to getlinked <span className='text-span'>tech Hackathon 1.0</span></h1>
+                        <p className='text-white font-montserrat text-sm md:w-[80%]'>Our tech hackathon is a melting pot of visionaries, and its purpose is as
+                            clear as day: to shape the future. Whether you're a coding genius, a 
+                            design maverick, or a concept wizard, you'll have the chance to transform 
+                            your ideas into reality. Solving real-world problems, pushing the boundaries
+                            of technology, and creating solutions that can change the world,
+                            that's what we're all about!
+                        </p>
+                    </div>
 
                 </div>
 
-                <div className='w-[80%] md:w-1/2'>
-                    <h1 className='font-clash text-white text-2xl w-[70%] md:w-[50%]'>Introduction to getlinked <span className='text-span'>tech Hackathon 1.0</span></h1>
-                    <p className='text-white font-montserrat text-sm md:w-[80%]'>Our tech hackathon is a melting pot of visionaries, and its purpose is as
-                        clear as day: to shape the future. Whether you're a coding genius, a 
-                        design maverick, or a concept wizard, you'll have the chance to transform 
-                        your ideas into reality. Solving real-world problems, pushing the boundaries
-                        of technology, and creating solutions that can change the world,
-                        that's what we're all about!
-                    </p>
-                </div>
-
-            </div>
-
+            
            
 
         </section>
@@ -126,11 +128,11 @@ const Main = () => {
 
         <section className='flex flex-col border-b border-b-gray-500'>
 
-            <div className='flex flex-col md:flex-row items-center relative py-6 px-4 pt-32'>
+            <div className='flex flex-col md:flex-row items-center relative py-6 px-4 pt-32 md:pt-16 lg:gap-x-16'>
 
 
-                <img src={ellipse} className='hidden md:block absolute top-32 left-28 z-10'></img>
-                <img src={attr} className='z-40'></img>
+                <img src={ellipse} className='hidden md:block absolute top-32 left-28 z-10 md:top-56 md:left-16 lg:left-28 lg:top-32'></img>
+                <img src={attr} className='z-40 w-[50%] max-lg:w-[50%]'></img>
                 <img src={purpleLens} className='absolute -bottom-32 left-16 md:bottom-16 md:-left-64 opacity-75'></img>
                 <img src={purpleLens} className='absolute md:top-0  md:-right-64 opacity-75'></img>
                 <img src={whiteStar} className='absolute bottom-16 left-64'></img>
@@ -138,9 +140,9 @@ const Main = () => {
 
 
                 <div className='flex flex-col gap-2 px-8'>
-                    <h1 className='font-clash text-white text-2xl w-[70%] md:w-auto'>Judging Criteria <span className='text-span'>Key attributes</span></h1>
+                    <h1 className='font-clash text-white text-2xl w-full lg:w-auto'>Judging Criteria <span className='text-span'>Key attributes</span></h1>
 
-                    <div className='md:w-[80%]'>
+                    <div className='lg:w-[80%]'>
                         <p className='text-white font-montserrat text-sm my-2'><span className='text-span font-bold'>Innovation and Creativity:</span> Evaluate the uniqueness and creativity of the
                             solution. Consider whether it addresses a real-world problem in a novel 
                             way or introduces innovative features.
@@ -181,19 +183,19 @@ const Main = () => {
 
             <div className="flex flex-col justify-center md:items-start md:ml-32 items-center w-full gap-y-4">
 
-                <div className='flex flex-col'><h1 className='font-clash text-white text-2xl'>Frequently Asked <span className='text-span'>Questions</span></h1>
+                <div className='flex flex-col'><h1 className='font-clash text-white text-2xl px-4'>Frequently Asked <span className='text-span'>Questions</span></h1>
                 </div>
             
             
-                <p className='text-white font-montserrat text-sm my-2 w-[400px] md:w-[500px]'>We got answers to the questions that you might want to ask about getlinked Hackathon 1.0</p>
+                <p className='text-white font-montserrat text-sm my-2 w-[270px] md:w-[350px] lg:w-[500px] px-4'>We got answers to the questions that you might want to ask about getlinked Hackathon 1.0</p>
 
                 <Accordion />
             </div>
                 <div className='relative'>
                     <img src={faq}></img>
-                    <img src={qOne} className='absolute -top-12 right-24'></img>
-                    <img src={qTwo} className='absolute -top-16 right-64'></img>
-                    <img src={qThree} className='absolute top-0 left-10 md:left-0'></img>
+                    <img src={qOne} className='absolute -top-12 right-20 md:right-16 lg:right-24'></img>
+                    <img src={qTwo} className='absolute -top-16 right-32 md:right-32 lg:right-64'></img>
+                    <img src={qThree} className='absolute top-0 left-10 md:left-12 lg:left-0'></img>
                 </div>
             </div>
 
@@ -202,17 +204,17 @@ const Main = () => {
         <section className='flex flex-col border-b border-b-gray-500'>
             <div className='flex flex-col gap-4 items-center justify-center py-10'>
 
-                <div className='relative'>
-                    <img src={timeline} className='hidden md:block relative'></img>
-                    <p className='text-white font-montserrat text-xl my-2 hidden md:block absolute top-16 right-56'>Here is the breakdown of the time we anticipate using for the upcoming event.</p>
+                <div className='relative flex flex-col items-center justify-center'>
+                    <img src={timeline} className='hidden md:block md:w-[90%] lg:w-auto relative pt-4'></img>
+                    <p className='text-white font-montserrat md:text-base lg:text-xl my-2 hidden md:block absolute top-16 right-56 w-[50%]'>Here is the breakdown of the time we anticipate using for the upcoming event.</p>
                 </div>
 
-                <div className='flex flex-col items-center md:hidden'>
+                <div className='flex flex-col items-start md:hidden px-4'>
                     <h1 className='font-clash text-white text-2xl'>Timeline</h1>
-                    <p className='text-white font-montserrat text-sm my-2 w-1/2'>Here is the breakdown of the time we anticipate using for the upcoming event.</p>
+                    <p className='text-white font-montserrat text-sm my-2'>Here is the breakdown of the time we anticipate using for the upcoming event.</p>
                 </div>
 
-                <div className='flex md:hidden'>
+                <div className='flex md:hidden px-4'>
                     <div><img src={number}></img></div>
                     <div><img src={date}></img></div>
                 </div>
@@ -260,9 +262,9 @@ const Main = () => {
 
         <section>
 
-            <div className='flex flex-col md:flex-row items-center justify-around px-8 gap-y-4 relative'>
+            <div className='flex flex-col md:flex-row items-center justify-around px-8 gap-y-4 md:gap-x-8 relative md:mb-8 lg:mb-0'>
 
-                <div className='flex flex-col items-center justify-center gap-4 md:w-1/2'>
+                <div className='flex flex-col items-center justify-center gap-4 md:w-[95%] lg:w-1/2'>
 
                     <div className='flex flex-col gap-y-8'>
                             <h1 className='font-clash text-white text-2xl'>Privacy Policy and <span className='text-span'>Terms</span></h1>
@@ -272,7 +274,7 @@ const Main = () => {
                     </div>
 
                     <div className='flex flex-col items-center justify-center gap-y-4 border border-gray-400 rounded-xl px-8 py-4 bg-black/30'>
-                        <p className='font-montserrat text-sm text-white'>At getlinked tech Hackathon 1.0, we value your privacy
+                        <p className='font-montserrat text-xs md:text-sm text-white'>At getlinked tech Hackathon 1.0, we value your privacy
                             and are committed to protecting your personal information.
                             This Privacy Policy outlines how we collect, use, disclose, 
                             and safeguard your data when you participate in our tech 
@@ -280,26 +282,26 @@ const Main = () => {
                             to the practices described in this policy.
                         </p>
 
-                        <h4 className='font-montserrat text-sm text-span font-bold'>Licensing Policy</h4>
+                        <h4 className='font-montserrat text-xs md:text-sm text-span font-bold'>Licensing Policy</h4>
 
-                        <p className='font-montserrat text-sm text-white font-bold'>
+                        <p className='font-montserrat text-xs md:text-sm text-white font-bold'>
                             Here are terms of our Standard License:
                         </p>
 
                         <div className='flex items-start justify-start gap-4'>
                             <FaCheckCircle className='text-green-400 text-xl md:text-sm'/>
-                            <p className='font-montserrat text-sm text-white'>The Standard License grants you a non-exclusive right to navigate and register for our event
+                            <p className='font-montserrat text-xs md:text-sm text-white'>The Standard License grants you a non-exclusive right to navigate and register for our event
                             </p> 
                         </div>
 
                         <div className='flex items-start justify-start gap-4'>
                             <FaCheckCircle className='text-green-400 text-xl md:text-sm'/>
-                            <p className='font-montserrat text-sm text-white'>You are licensed to use the item available at any free source
+                            <p className='font-montserrat text-xs md:text-sm text-white'>You are licensed to use the item available at any free source
                             sites, for your project developement
                             </p> 
                         </div>
 
-                        <button className='py-4 px-10 text-white font-montserrat text-sm cursor-pointer bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-sm font-semibold'>Read More</button>
+                        <button className='py-4 px-10 text-white font-montserrat text-xs md:text-sm cursor-pointer bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-sm font-semibold'>Read More</button>
 
 
                     </div>
@@ -307,14 +309,14 @@ const Main = () => {
                 </div>
 
 
-                <div className='relative grid'>
+                <div className='relative'>
                     <img src={privacy} className='z-40'></img>
                     <img src={padlock} className='absolute z-10 top-0'></img>
                 </div>
 
-                <img src={bigStar} className='absolute top-10 md:top-0 left-16 md:left-32'></img>
+                <img src={bigStar} className='absolute top-10 md:top-0 left-16 md:left-0 lg:left-32'></img>
                 <img src={whiteStar} className='bottom-0 right-0'></img>
-                <img src={smallStar} className='absolute bottom-32 right-8 md:right-[35rem]'></img>
+                <img src={smallStar} className='absolute bottom-32 right-8 md:right-[30rem] lg:right-[35rem]'></img>
                 <img src={purpleLens} className='absolute bottom-64 md:-bottom-64 -left-32 opacity-50'></img>
 
             </div>
