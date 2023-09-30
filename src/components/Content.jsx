@@ -27,10 +27,12 @@ import reward from '../images/rewards.png';
 import partner from '../images/partner.png';
 import padlock from '../images/padlock.png';
 import privacy from '../images/privacy.png';
+import bentline from '../images/bentline.png';
 
 
 import Accordion from './Accordion';
 import { FaCheckCircle } from 'react-icons/fa';
+import AnimatedText from './AnimatedText';
 
 
 
@@ -38,9 +40,11 @@ import { FaCheckCircle } from 'react-icons/fa';
 
 const Main = () => {
   return (
-    <main className='-z-50'>
-        <section className='flex flex-col md:flex-row justify-around items-center border-b border-b-gray-500 px-8 pt-16 pl-4 overflow-hidden'>
-            <div className='h-[50vh] w-[80%] md:w-auto md:h-auto flex flex-col justify-center items-center md:items-start md:justify-start relative mb-20 md:mb-0'>
+    <main className='-z-50 mt-[13vh] md:mt-[10vh] lg:mt-[13vh]'>
+        <section className='flex flex-col md:flex-row justify-around items-center border-b border-b-gray-500 px-8 pt-16 pl-4 overflow-hidden relative'>
+            <AnimatedText />
+            <img src={bentline} className='absolute top-16 md:top-16 w-[25%] md:w-[30%] md:right-44'></img>
+            <div className='h-[50vh] w-[80%] md:w-[90%] lg:w-auto md:h-auto flex flex-col justify-center items-center md:items-start md:justify-start relative mb-20 md:mb-0 mt-28'>
                 <img src={purpleLens} className='absolute -top-24 -left-60 md:-top-60 md:-left-32 blur-xl w-[70%]'></img>
                 <img src={star} className='block absolute bottom-8 left-44 md:hidden'></img>
                 <img src={star} className='block absolute top-8 left-32 md:hidden'></img>
@@ -54,10 +58,10 @@ const Main = () => {
 
                 <Button />
 
-                <div className='text-sm text-white font-unica mt-16'><span className='text-4xl md:text-4xl'>00</span>H <span className='text-4xl md:text-4xl'>00</span>M <span className='text-4xl md:text-4xl'>00</span>S</div>
+                <div className='text-sm text-white font-unica mt-12 pb-4'><span className='text-4xl md:text-4xl'>00</span>H <span className='text-4xl md:text-4xl'>00</span>M <span className='text-4xl md:text-4xl'>00</span>S</div>
             </div>
 
-            <div className='relative'>
+            <div className='relative mt-4 md:mt-12'>
                 <img src={man} className='grayscale order-3'></img>
                 <img src={star} className='absolute bottom-8 -left-16'></img>
                 <img src={star} className='absolute top-8 -left-0'></img>
@@ -71,12 +75,12 @@ const Main = () => {
         <section className='flex flex-col items-center justify-center border-b border-b-gray-500'>
            
 
-                <div className='flex flex-col md:flex-row items-center md:h-[40vh] lg:h-[70vh] px-4 mt-8 md:mt-2 md:gap-8 gap-y-8 py-6 md:py-4 relative'>
+                <div className='flex flex-col md:flex-row items-center px-4 mt-8 md:mt-2 md:gap-8 gap-y-8 py-6 md:py-10 relative'>
                     <img src={smallStar} className='absolute bottom-32 right-8 md:top-16 md:left-16'></img>
                     <img src={bigStar} className='absolute right-96 top-32 md:top-32 md:right-16'></img>
-                    <img src={arrow}  className='absolute bottom-80 md:bottom-4 md:right-[40rem]'></img>
+                    <img src={arrow}  className='absolute bottom-[22rem] md:bottom-4 md:right-[35rem] max-sm:w-[10%]'></img>
 
-                    <div className='md:w-1/2 md:pl-8'>
+                    <div className='md:w-1/2 md:pl-8 px-4'>
                         <img src={bigIdea} className=''></img>
 
                     </div>
@@ -132,7 +136,7 @@ const Main = () => {
 
 
                 <img src={ellipse} className='hidden md:block absolute top-32 left-28 z-10 md:top-56 md:left-16 lg:left-28 lg:top-32'></img>
-                <img src={attr} className='z-40 w-[50%] max-lg:w-[50%]'></img>
+                <img src={attr} className='z-40 w-full md:w-[40%] lg:w-full px-4'></img>
                 <img src={purpleLens} className='absolute -bottom-32 left-16 md:bottom-16 md:-left-64 opacity-75'></img>
                 <img src={purpleLens} className='absolute md:top-0  md:-right-64 opacity-75'></img>
                 <img src={whiteStar} className='absolute bottom-16 left-64'></img>
@@ -142,34 +146,34 @@ const Main = () => {
                 <div className='flex flex-col gap-2 px-8  gap-y-4 mb-4'>
                     <h1 className='font-clash text-white text-2xl w-full lg:w-auto'>Judging Criteria <span className='text-span'>Key attributes</span></h1>
 
-                    <div className='lg:w-[80%]'>
-                        <p className='text-white font-montserrat text-sm my-2 mb-4'><span className='text-span font-bold'>Innovation and Creativity:</span> Evaluate the uniqueness and creativity of the
+                    <div className='md:w-full lg:w-auto'>
+                        <p className='text-white font-montserrat text-sm md:text-xs lg:text-sm my-2 mb-4'><span className='text-span font-bold'>Innovation and Creativity:</span> Evaluate the uniqueness and creativity of the
                             solution. Consider whether it addresses a real-world problem in a novel 
                             way or introduces innovative features.
                         </p>
 
-                        <p className='text-white font-montserrat text-sm my-2 mb-4'><span  className='text-span font-bold'>Functionality:</span> Assess how well the solution works. Does it perform its 
+                        <p className='text-white font-montserrat text-sm md:text-xs lg:text-sm my-2 mb-4'><span  className='text-span font-bold'>Functionality:</span> Assess how well the solution works. Does it perform its 
                             intended functions effectively and without major issues? Judges would
                             consider the completeness and robustness of the solution.
                         </p>
 
-                        <p className='text-white font-montserrat text-sm my-2 mb-4'><span  className='text-span font-bold'>Impact and Relevance:</span> Determine the potential impact of the solution 
+                        <p className='text-white font-montserrat text-sm md:text-xs lg:text-sm my-2 mb-4'><span  className='text-span font-bold'>Impact and Relevance:</span> Determine the potential impact of the solution 
                             in the real world. Does it address a significant problem, and is it relevant 
                             to the target audience? Judges would assess the potential social, 
                             economic, or environmental benefits.
                         </p>
 
-                        <p className='text-white font-montserrat text-sm my-2 mb-4'><span  className='text-span font-bold'>Technical Complexity:</span> Evaluate the technical sophistication of the solution. 
+                        <p className='text-white font-montserrat text-sm md:text-xs lg:text-sm my-2 mb-4'><span  className='text-span font-bold'>Technical Complexity:</span> Evaluate the technical sophistication of the solution. 
                             Judges would consider the complexity of the code, the use of advanced 
                             technologies or algorithms, and the scalability of the solution.
                         </p>
 
-                        <p className='text-white font-montserrat text-sm my-2 mb-4'><span  className='text-span font-bold'>Adherence to Hackathon Rules:</span> Judges will Ensure that the team adhered 
+                        <p className='text-white font-montserrat text-sm md:text-xs lg:text-sm my-2 mb-4'><span  className='text-span font-bold'>Adherence to Hackathon Rules:</span> Judges will Ensure that the team adhered 
                             to the rules and guidelines of the hackathon, including deadlines, use of 
                             specific technologies or APIs, and any other competition-specific requirements.
                         </p>
 
-                        <button className='py-4 px-10 text-white font-montserrat text-sm bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-sm font-semibold cursor-pointer my-2'>Read More</button>
+                        <button className='py-4 px-10 text-white font-montserrat text-sm md:text-xs lg:text-sm bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-sm font-semibold cursor-pointer my-2'>Read More</button>
 
                     </div>
 

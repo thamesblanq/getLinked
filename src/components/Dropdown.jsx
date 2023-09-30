@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Dropdown = ({ setShow }) => {
   return (
-    <div className="md:hidden flex flex-col gap-4 bg-[#150E28] fixed top-0 right-0 w-full h-full animate-open-menu px-4 z-50 overflow-hidden ">
+    <div className="md:hidden flex flex-col gap-4 bg-black/95 fixed top-0 right-0 w-full h-full animate-open-menu px-4 z-50 overflow-hidden ">
         <FaTimes className="font-semibold font-montserrat text-4xl mt-2 mr-4 cursor-pointer absolute right-0 top-2 hover:text-span/25 text-span" onClick={() => setShow((prev) => !prev)} />
         <nav className="flex flex-col gap-4 mt-16 items-start">
           <ul className="flex flex-col gap-y-5">

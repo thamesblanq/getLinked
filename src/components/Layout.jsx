@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
-    <div className="bg-[#150E28] overflow-hidden">
+    <div className="bg-[#150E28] overflow-hidden relative">
         <Header />
         <Outlet />
         <Footer />
