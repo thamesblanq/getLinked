@@ -61,7 +61,7 @@ const Contact = () => {
     } */
 
   return (
-    <section>
+    <section className="mt-[13vh] md:mt-[10vh] lg:mt-[13vh]">
 
             <div className="flex flex-col md:flex-row justify-around items-center py-8 px-4 gap-y-8 overflow-hidden">
 

@@ -74,7 +74,7 @@ const Register = () => {
     <>
     {showModal && <Modal isOpen={showModal} onClose={() => setShowModal(false)} />}
 
-    <section>
+    <section className='mt-[13vh] md:mt-[10vh] lg:mt-[13vh]'>
       <div className='flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0 px-8 py-8 overflow-hidden'>
         <div className='relative'>
           <img src={register} alt='Register' />
