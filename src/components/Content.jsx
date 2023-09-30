@@ -44,7 +44,7 @@ const Main = () => {
         <section className='flex flex-col md:flex-row justify-around items-center border-b border-b-gray-500 px-8 pt-16 pl-4 overflow-hidden relative'>
             <AnimatedText />
             <img src={bentline} className='absolute top-16 md:top-16 w-[25%] md:w-[30%] md:right-44'></img>
-            <div className='h-[50vh] w-[80%] md:w-[90%] lg:w-auto md:h-auto flex flex-col justify-center items-center md:items-start md:justify-start relative mb-20 md:mb-0 mt-28'>
+            <div className='h-[50vh] w-[80%] md:w-[90%] lg:w-auto md:h-auto flex flex-col justify-center items-center md:items-start md:justify-start relative mb-20 md:mb-0 mt-28 lg:mt-16'>
                 <img src={purpleLens} className='absolute -top-24 -left-60 md:-top-60 md:-left-32 blur-xl w-[70%]'></img>
                 <img src={star} className='block absolute bottom-8 left-44 md:hidden'></img>
                 <img src={star} className='block absolute top-8 left-32 md:hidden'></img>
