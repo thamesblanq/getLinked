@@ -33,8 +33,7 @@ import bentline from '../images/bentline.png';
 import Accordion from './Accordion';
 import { FaCheckCircle } from 'react-icons/fa';
 import AnimatedText from './AnimatedText';
-
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -45,7 +44,7 @@ const Main = () => {
             <AnimatedText />
             <img src={bentline} className='absolute top-16 md:top-16 w-[25%] md:w-[30%] md:right-44'></img>
             <div className='h-[50vh] w-[80%] md:w-[90%] lg:w-auto md:h-auto flex flex-col justify-center items-center md:items-start md:justify-start relative mb-20 md:mb-0 mt-28 lg:mt-16'>
-                <img src={purpleLens} className='absolute -top-24 -left-60 md:-top-60 md:-left-32 blur-xl w-[70%]'></img>
+                <img src={purpleLens} className='absolute -top-24 -left-60 md:-top-60 md:-left-32 blur-xl w-[70%] z-10'></img>
                 <img src={star} className='block absolute bottom-8 left-44 md:hidden'></img>
                 <img src={star} className='block absolute top-8 left-32 md:hidden'></img>
                 <div className='mb-4 relative'>
@@ -56,7 +55,10 @@ const Main = () => {
                         <img src={fire} className='absolute top-8 -right-8 md:top-10 md:right-4 lg:top-16 lg:right-32 w-[10%] lg:w-auto'></img>
                 </div>
 
-                <Button />
+                <Link to='/register' className='z-50'>
+                    <Button />
+                </Link>
+                
 
                 <div className='text-sm text-white font-unica mt-12 pb-4'><span className='text-4xl md:text-4xl'>00</span>H <span className='text-4xl md:text-4xl'>00</span>M <span className='text-4xl md:text-4xl'>00</span>S</div>
             </div>
