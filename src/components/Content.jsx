@@ -34,6 +34,7 @@ import Accordion from './Accordion';
 import { FaCheckCircle } from 'react-icons/fa';
 import AnimatedText from './AnimatedText';
 import { Link } from 'react-router-dom';
+import Countdown from './Countdown';
 
 
 
@@ -44,7 +45,7 @@ const Main = () => {
             <AnimatedText />
             <img src={bentline} className='absolute top-16 md:top-16 w-[25%] md:w-[30%] md:right-44'></img>
             <div className='h-[50vh] w-[80%] md:w-[90%] lg:w-auto md:h-auto flex flex-col justify-center items-center md:items-start md:justify-start relative mb-20 md:mb-0 mt-28 lg:mt-16'>
-                <img src={purpleLens} className='absolute -top-24 -left-60 md:-top-60 md:-left-32 blur-xl w-[70%] z-10'></img>
+                <img src={purpleLens} className='absolute -top-24 -left-60 md:-top-60 md:-left-32 opacity-50 w-[70%] z-10'></img>
                 <img src={star} className='block absolute bottom-8 left-44 md:hidden'></img>
                 <img src={star} className='block absolute top-8 left-32 md:hidden'></img>
                 <div className='mb-4 relative'>
@@ -55,12 +56,12 @@ const Main = () => {
                         <img src={fire} className='absolute top-8 -right-8 md:top-10 md:right-4 lg:top-16 lg:right-32 w-[10%] lg:w-auto'></img>
                 </div>
 
-                <Link to='/register' className='z-50'>
+                <Link to='/register' className='z-30'>
                     <Button />
                 </Link>
                 
 
-                <div className='text-sm text-white font-unica mt-12 pb-4'><span className='text-4xl md:text-4xl'>00</span>H <span className='text-4xl md:text-4xl'>00</span>M <span className='text-4xl md:text-4xl'>00</span>S</div>
+                <Countdown />
             </div>
 
             <div className='relative mt-4 md:mt-12'>
@@ -74,7 +75,7 @@ const Main = () => {
 
         </section>
 
-        <section className='flex flex-col items-center justify-center border-b border-b-gray-500'>
+        <section className='flex flex-col items-center justify-center border-b border-b-gray-500' id='overview'>
            
 
                 <div className='flex flex-col md:flex-row items-center px-4 mt-8 md:mt-2 md:gap-8 gap-y-8 py-6 md:py-10 relative'>
@@ -184,7 +185,7 @@ const Main = () => {
             </div>
         </section>
 
-        <section className='flex flex-col border-b border-b-gray-500'>
+        <section className='flex flex-col border-b border-b-gray-500' id='FAQ'>
             <div className='flex flex-col md:flex-row items-center justify-around py-4 pt-8 gap-y-20 md:gap-y-0'>
 
             <div className="flex flex-col justify-center md:items-start md:ml-32 items-center w-full gap-y-4">
@@ -207,7 +208,7 @@ const Main = () => {
 
         </section>
 
-        <section className='flex flex-col border-b border-b-gray-500'>
+        <section className='flex flex-col border-b border-b-gray-500' id='timeline'>
             <div className='flex flex-col gap-4 items-center justify-center py-10'>
 
                 <div className='relative flex flex-col items-center justify-center'>
