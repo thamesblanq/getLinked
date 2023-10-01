@@ -2,7 +2,7 @@ import congrat from '../images/congratulation.png';
 
 const Modal = ({ isOpen, onClose }) => {
   return isOpen ? (
-    <section className='w-screen h-screen bg-[#150E28]/90 z-50 fixed top-0 right-0 animate-open-menu overflow-hidden'>
+    <section className='w-screen h-screen bg-[#150E28]/90 z-50 fixed top-0 right-0 animate-open-menu overflow-hidden' onClick={onClose}>
 
         <div className='flex flex-col items-center justify-center gap-y-4 p-8'>
                 <img src={congrat}></img>

@@ -59,6 +59,7 @@ const Register = () => {
       console.log(result);
     } catch (err) {
       console.error(err);
+      setShowModal(false);
     }
   };
 
@@ -72,7 +73,7 @@ const Register = () => {
 
   return (
     <>
-    {showModal && <Modal isOpen={showModal} onClose={() => setShowModal(false)} />}
+    {showModal && <Modal isOpen={showModal} onClose={() => setShowModal(!showModal)} />}
 
     <section className='mt-[13vh] md:mt-[10vh] lg:mt-[13vh]'>
       <div className='flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0 px-8 py-8 overflow-hidden'>

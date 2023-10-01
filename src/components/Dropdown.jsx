@@ -11,13 +11,13 @@ const Dropdown = ({ setShow }) => {
 
         <nav className="flex flex-col gap-4 mt-16 items-start">
           <ul className="flex flex-col gap-y-5">
-              <li className="text-white cursor-pointer hover:font-bold font-montserrat"><a href="#timeline">Timeline</a></li>
-              <li className="text-white cursor-pointer hover:font-bold  font-montserrat"><a href="#overview">Overview</a></li>
-              <li className="text-white cursor-pointer hover:font-bold  font-montserrat"><a href="#FAQ">FAQs</a></li>
-              <li className='text-white font-montserrat hover:font-bold cursor-pointer'><Link to='/contact'>Contact</Link></li>
+              <li className="text-white cursor-pointer hover:font-bold font-montserrat" onClick={() => setShow((prev) => !prev)}><a href="#timeline">Timeline</a></li>
+              <li className="text-white cursor-pointer hover:font-bold  font-montserrat" onClick={() => setShow((prev) => !prev)}><a href="#overview">Overview</a></li>
+              <li className="text-white cursor-pointer hover:font-bold  font-montserrat" onClick={() => setShow((prev) => !prev)}><a href="#FAQ">FAQs</a></li>
+              <li className='text-white font-montserrat hover:font-bold cursor-pointer' onClick={() => setShow((prev) => !prev)}><Link to='/contact'>Contact</Link></li>
           </ul>
         </nav>
-        <Link to='/register'>
+        <Link to='/register' onClick={() => setShow((prev) => !prev)}>
             <button className='py-4 px-10 text-white font-montserrat text-sm cursor-pointer bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-sm font-semibold'>Register</button>
         </Link>
     </div>
